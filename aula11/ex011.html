@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Onde você está vivendo: <input type="text" name="país" id="país">
+    <input type="button" value="verificar" onclick='calcular()'>
+    <div id='res'>
+
+    </div>
+    <script>
+        function calcular() {
+            var txtp = window.document.querySelector('input#país')
+            var res = window.document.querySelecor('div#res')
+            if (txtp == 'brasil') {
+                res.innerHTML = `<p>Você é Brasileiro!</p>`
+            }else{
+                res.innerHTML = `<p>Você é Estrangeiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
